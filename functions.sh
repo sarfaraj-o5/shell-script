@@ -34,10 +34,11 @@ function configuration(){
 }
 
 function deploy {
-    echo "config ${1}"
+    echo "deploying ${1}"
     echo "${FUNCNAME}"
 }
 
-configuration "nginx"
+
 install "nginx"
+configuration "nginx"
 deploy "webapplication"
