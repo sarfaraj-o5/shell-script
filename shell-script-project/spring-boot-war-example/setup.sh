@@ -16,7 +16,7 @@ function clean_up(){
 
 trap "clean_up;exit 2" 2
 
-showBanner scripts/banner.txt
+// showBanner scripts/banner.txt
 
 if [[ $UID != 0 ]]
 then
